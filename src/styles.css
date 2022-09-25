@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+.App {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #808f99;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container h1 {
+  color: #ccffcc;
+}
+.new-task input {
+  width: 250px;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 10px;
+}
+.new-task input:focus {
+  outline: 1px solid #c0edff;
+}
+
+.btn {
+  width: 50px;
+  box-sizing: border-box;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.new-task button:active {
+  background-color: grey;
+}
+.content {
+  text-align: left;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  border-bottom: solid 1px #ffccff;
+}
+.deletebutton {
+  float: right;
+  background-color: #c0edff;
+  color: #faf2cc;
+  padding: 0 6px 3px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: lowercase;
+  text-align: center;
+}
+.add {
+  color: #808f99;
+  background-color: #ccffcc;
+}
+.clear {
+  margin-top: 1rem;
+  color: #3b233d;
+  background-color: #f9dcfb;
+  float: right;
+  font-weight: bold;
+  font-size: 16px;
+}
+.crossed {
+  text-decoration: line-through;
+  text-decoration-color: #ffccff;
+}
+.checkboxInput[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+.checkboxInput[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  border: 2px solid #555555;
+  border-radius: 3px;
+  background-color: #ccffcc;
+}
+.checkboxInput[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid #808f99;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
